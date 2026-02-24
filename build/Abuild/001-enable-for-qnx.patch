@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b39a73c..d593451 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -33,7 +33,7 @@ if(NOT TARGET Qt::ShaderTools)
+     return()
+ endif()
+ 
+-if(INTEGRITY OR QNX OR VXWORKS OR WATCHOS)
++if(INTEGRITY OR VXWORKS OR WATCHOS)
+     message(NOTICE "Skipping the build as the condition \"NOT INTEGRITY AND NOT QNX AND NOT VXWORKS AND NOT WATCHOS\" is not met.")
+     return()
+ endif()
